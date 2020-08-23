@@ -44,8 +44,7 @@ INSTALLED_APPS = [
     'greetings',
     'mpesa',
     'rest_framework',
-    'mpesa_api.core',
-    'mpesa_api.util',
+
 ]
 
 MIDDLEWARE = [
@@ -138,48 +137,6 @@ STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
 # Safaricom Configs
 
 
-
-# C2B (Paybill) Configs
-# See https://developer.safaricom.co.ke/c2b/apis/post/registerurl
-
-#Consumer Secret
-MPESA_C2B_ACCESS_KEY = 'Hd2mxitQEAYp6EdHpwGhbvK1U3kOxAUK'
-# Consumer Key
-MPESA_C2B_CONSUMER_SECRET ='j4eDUQQn9zOR18Nc'
-# Url for registering your paybill replace it the url you get from safaricom after you have passed the UATS
-C2B_REGISTER_URL ='helloanaco.herokuapp.com'
-#ValidationURL
-# replace http://mpesa.ngrok.io/ with your url ow here this app is running
-C2B_VALIDATE_URL ='helloanaco.herokuapp.com'
-#ConfirmationURL
-# replace http://mpesa.ngrok.io/ with your url ow here this app is running
-C2B_CONFIRMATION_URL ='helloanaco.herokuapp.com'
-#ShortCode (Paybill)
-C2B_SHORT_CODE ='174379'
-
-#ResponseType
-C2B_RESPONSE_TYPE ='Completed'
-
-# C2B (STK PUSH) Configs
-# https://developer.safaricom.co.ke/lipa-na-m-pesa-online/apis/post/stkpush/v1/processrequest
-
-#replace http://mpesa.ngrok.io/ with your url ow here this app is running
-C2B_ONLINE_CHECKOUT_CALLBACK_URL ='helloanaco.herokuapp.com'
-# The Pass Key provided by Safaricom when you pass UAT's
-# See https://developer.safaricom.co.ke/test_credentials
-C2B_ONLINE_PASSKEY = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'
-# Your Short code
-C2B_ONLINE_SHORT_CODE ='174379'
-
-
-# your paybill or till number
-C2B_ONLINE_PARTY_B ='174379'
-# number of seconds from the expiry we consider the token expired the token expires after an hour
-# so if the token is 600 sec (10 minutes) to expiry we consider the token expired.
-TOKEN_THRESHOLD ='3599'
-
-#celery settings
-CELERY_BROKER_URL = 'amqp://guest:guest@rabbitmq:5672//'
 
 
 django_heroku.settings(locals())
