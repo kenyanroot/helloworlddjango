@@ -14,10 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 from greetings.views import homepage
+from  mpesa.urls import mpesa_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage,name='home'),
+    #path('mpesa/', include(mpesa_urls)),
+    path(r'^api-auth/',include('rest_framework.urls')),
+    path('mpesa/',include('mpesa_api.core.urls','mpesa')),
 ]
