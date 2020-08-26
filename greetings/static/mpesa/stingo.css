@@ -1,7 +1,7 @@
-p{
-        color:black;
-        font-family: Times New Roman;
-        font-size: large;
+.pa{
+        color:red;
+        font-family: Arial Verdana,sans-seriff;
+        font-size: small;
     }
 
 
@@ -32,9 +32,10 @@ p{
         display:inline-block;
         padding:15px ;
         width:100%;
+
 }
 
-.container{
+.container{ color: black;
             width:100%;
             padding:12px 20px;
             margin-left: 0;
@@ -44,31 +45,5 @@ p{
             box-sizing:border-box;
 }
 
-.topnav{background-color: #4CAF50;
-        overflow:hidden;
-
+.paragraph{font-size: small;
 }
-
-.topnav a {
-    float:left;
-    color:#f2f2f2;
-    text-align:center;
-    padding :14px,16px;
-    text-decoration:none;
-    font-size:17px
-    display:block;
-
-
-}
-
-.topnav a:hover{
-background-color:#bbb;
-    color: black;
-}
-
-.topnav a.active{
-    background-color:#4CAF50;
-    color: white;
-
-}
-

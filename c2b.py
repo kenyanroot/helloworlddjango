@@ -1,8 +1,6 @@
 import requests
-import keys
-from requests.auth import HTTPBasicAuth
-import acess_token
 
+from helloanaco.helloanaco.tokengenerator import acess_token
 
 my_acess_token=acess_token()
 
@@ -21,7 +19,7 @@ def reg_url():
 
     print(response.text)
 
-reg_url()
+#reg_url()
 
 
 def stimulatectob():

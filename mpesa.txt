@@ -2,7 +2,7 @@ import requests
 import keys
 from datetime import datetime
 import base64
-from tokengenerator import acess_token
+from  tokengenerator import acess_token
 #2020-08-25 19:35:51.573044
 
 unformatted_time=datetime.now()
@@ -22,7 +22,7 @@ print(formatted_time)
 my_acess_token=acess_token()
 print(acess_token)
 
-def lipa_na_mpesa():
+def lipa_na_mpesa(**kwargs ):
     access_token = my_acess_token
     api_url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"
     headers = {"Authorization": "Bearer %s" % access_token}

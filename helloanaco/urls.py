@@ -15,14 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from greetings.views import homepage
-from greetings.views import processing
+from .views import homepage, Viewclass
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage,name='home'),
     path('api-auth/', include('rest_framework.urls')),
-    path('submited',processing)
+    path('Viewclass',Viewclass.as_view())
 
 ]
