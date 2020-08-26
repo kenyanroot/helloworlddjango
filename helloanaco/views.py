@@ -45,6 +45,8 @@ class Viewclass(View):
             comment = request.POST['comment']
             name = request.POST['firstname']
 
+            comm
+
             print(phone_number,comment,name)
 
             unformatted_time = datetime.now()
@@ -86,7 +88,8 @@ class Viewclass(View):
 
             lipa_na_mpesa()
 
-            return HttpResponse("please check your phone.If you have any balance left you should receieve an stk push.Otherwise an mpesa message will be good enough for you😊👍. Thank you for helping me test my system and have a nice day ahead🦧😎")
+            return HttpResponse("Please check your phone.If you have any balance left you should receieve an stk push.Otherwise an mpesa message will be good enough for you😊👍. Thank you for helping me test my system and have a nice day ahead🦧😎. With regards,Anaco🎩"
+                                )
 
         def sender(self, comment,name,phone_number):
             print(comment,name,phone_number)
