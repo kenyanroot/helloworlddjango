@@ -45,7 +45,7 @@ class Viewclass(View):
             comment = request.POST['comment']
             name = request.POST['firstname']
 
-            comm
+
 
             print(phone_number,comment,name)
 
