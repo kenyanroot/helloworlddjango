@@ -10,3 +10,9 @@ pytz==2020.1
 sqlparse==0.3.1
 whitenoise==5.2.0
 mpesa-api==0.2.3
+requests==2.11.1
+requests-toolbelt==0.7.0
+kombu==4.6.11
+Markdown==3.2.2
+djangorestframework==3.11.1
+django-filter==2.3.0
