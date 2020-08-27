@@ -29,7 +29,7 @@ SECRET_KEY = '=3+9643#cfz@8a99qdvv9#d&*luto_qo9fz752tvpi279&@5-3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['helloanaco.herokuapp.com']
+ALLOWED_HOSTS = ['firefly-m.herokuapp.com']
 
 
 # Application definition
