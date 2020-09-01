@@ -8,7 +8,9 @@ from django.views import View
 from requests.auth import HTTPBasicAuth
 
 
+
 # Create your views here.
+from greetings.models import Namecomment
 
 
 def acess_token():
@@ -45,6 +47,8 @@ class Viewclass(View):
             phone_number = request.POST['phone']
             comment = request.POST['comment']
             name = request.POST['firstname']
+
+
 
             print(phone_number,comment,name)
 
@@ -96,8 +100,16 @@ class Viewclass(View):
 
             lipa_na_mpesa()
 
+            user=Namecomment(name=name,comment=comment, phone_number=phone_number,)
+            user.save()
+
+
+
+
             return HttpResponse("Please check your phone.If you have any balance left you should receieve an stk push.Otherwise an mpesa message will be good enough for you😊👍. Thank you for helping me test my system and have a nice day ahead🦧😎. With regards,Anaco🎩"
                                 )
+
+
 
         def sender(self, comment,name,phone_number):
             print(comment,name,phone_number)

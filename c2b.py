@@ -1,6 +1,6 @@
 import requests
 
-from helloanaco.helloanaco.tokengenerator import acess_token
+from mainapp.helloanaco.tokengenerator import acess_token
 
 my_acess_token=acess_token()
 
