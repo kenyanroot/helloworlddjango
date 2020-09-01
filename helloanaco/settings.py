@@ -14,6 +14,8 @@ import os
 from pathlib import Path
 
 import django_heroku
+from decouple import config
+config.encoding='cp1251'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 
@@ -24,7 +26,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '=3+9643#cfz@8a99qdvv9#d&*luto_qo9fz752tvpi279&@5-3'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -88,6 +90,19 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+#heroku database configs
+#DATABASES = {
+    #'default': {
+       # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'NAME': 'mpesadb',
+        #'USER': 'postgres',
+        #'PASSWORD': config('DB_PASSWORD'),
+        #'PORT':'',
+        #'HOST':'localhost'
+    #}
+#}
+
 
 
 # Password validation
