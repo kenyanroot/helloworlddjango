@@ -40,14 +40,16 @@ class Viewclass(View):
 
             pass
 
+
         def post(self, request):
             phone_number = request.POST['phone']
             comment = request.POST['comment']
             name = request.POST['firstname']
 
-
-
             print(phone_number,comment,name)
+
+
+            #Generating timestamp
 
             unformatted_time = datetime.now()
 
@@ -61,8 +63,14 @@ class Viewclass(View):
 
             print(formatted_time)
 
+
+            #acces token
+
             my_acess_token = acess_token()
             print(acess_token)
+
+
+            #Brought this function here from mpesa.py in order to be able to acces the local variable phone_number
 
             def lipa_na_mpesa():
                 access_token = my_acess_token
