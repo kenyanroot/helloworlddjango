@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+
+
 from .views import homepage, Viewclass
+from serverresponse.api import urls
+
 
 
 
@@ -23,6 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage,name='home'),
     path('api-auth/', include('rest_framework.urls')),
-    path('Viewclass',Viewclass.as_view())
+    path('Viewclass',Viewclass.as_view()),
+    path('api/payments' ,include("serverresponse.api.urls")),
 
 ]

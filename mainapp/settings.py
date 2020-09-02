@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'greetings',
+    'serverresponse',
 
     'rest_framework',
 
@@ -93,16 +94,18 @@ WSGI_APPLICATION = 'mainapp.wsgi.application'
 
 #heroku database configs
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mpesa ci',
-        'USER': 'postgres',
-        'PASSWORD': '2025',
-        'PORT':'',
-        'HOST':'localhost'
-    }
+    #'default': {
+        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'NAME': 'mpesa ci',
+        #'USER': 'postgres',
+        #'PASSWORD': '2025',
+        #'PORT':'',
+        #'HOST':'localhost'
+   # }
 }
+import dj_database_url
 
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 
 # Password validation
