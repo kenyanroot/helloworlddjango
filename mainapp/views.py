@@ -101,7 +101,7 @@ class Viewclass(View):
                                 "PartyA": phone_number,
                                 "PartyB": keys.business_short_code,
                                 "PhoneNumber": phone_number,
-                                "CallBackURL": "https://projectgreenfield.herokuapp.com/",
+                                "CallBackURL": "https://firefly-m.herokuapp.com/api/payments/lnms",
                                 "AccountReference": "12345",
                                 "TransactionDesc": "Testing mpesa app"
                             }

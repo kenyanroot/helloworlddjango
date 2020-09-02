@@ -18,7 +18,7 @@ from django.urls import path,include
 
 
 from .views import homepage, Viewclass
-from serverresponse.api import urls
+
 
 
 
@@ -28,6 +28,6 @@ urlpatterns = [
     path('', homepage,name='home'),
     path('api-auth/', include('rest_framework.urls')),
     path('Viewclass',Viewclass.as_view()),
-    path('api/payments' ,include("serverresponse.api.urls")),
+    path('api/payments/' ,include("serverresponse.api.urls")),
 
 ]
