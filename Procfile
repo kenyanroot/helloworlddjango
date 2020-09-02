@@ -1,1 +1,1 @@
-web: gunicorn helloanaco.wsgi
+web: gunicorn mainapp.wsgi

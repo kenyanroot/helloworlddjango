@@ -4,7 +4,7 @@ from rest_framework.generics import CreateAPIView
 from rest_framework.permissions import AllowAny
 
 from serverresponse.api.serializers import Mpesaserial
-from serverresponse.models import Lipanampesa
+#from serverresponse.models import Lipanampesa
 
 class LNMonlineapiview(CreateAPIView):
     queryset = User.objects.all()

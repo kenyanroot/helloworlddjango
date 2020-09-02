@@ -19,6 +19,7 @@ def reg_url():
 
     print(response.text)
 
+
 reg_url()
 
 
