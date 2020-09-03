@@ -1,11 +1,9 @@
-from django.contrib import admin
-from django.urls import path,include
-from serverresponse.api import views
+from django.urls import path
 
-from serverresponse.api.views import LNMonlineapiview
+from serverresponse.api.views import LNMCallbackapiview
 
 urlpatterns = [
-    path('lnms/',LNMonlineapiview.as_view(), name='lnm-onlinecallbackurl'),
+    path('lnm/', LNMCallbackapiview.as_view(), name='lnm-callbackurl'),
 
 
 ]

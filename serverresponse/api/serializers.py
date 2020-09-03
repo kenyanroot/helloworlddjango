@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from serverresponse.models import Lipanampesa
+from serverresponse.models import LMNOnline
 
 
-class  Mpesaserial(serializers.ModelSerializer):
+class  LNNOnlineSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Lipanampesa
+        model = LMNOnline
         fields = ['id']

@@ -2,6 +2,7 @@ import base64
 from datetime import datetime
 from  django.http import HttpResponse
 import keys
+from keys import business_short_code
 import requests
 from django.shortcuts import render
 from django.views import View
@@ -99,9 +100,9 @@ class Viewclass(View):
                                 "TransactionType": "CustomerPayBillOnline",
                                 "Amount": "1",
                                 "PartyA": phone_number,
-                                "PartyB": keys.business_short_code,
+                                "PartyB":business_short_code,
                                 "PhoneNumber": phone_number,
-                                "CallBackURL": "https://firefly-m.herokuapp.com/api/payments/lnms",
+                                "CallBackURL": "https://firefly-m.herokuapp.com/api/payments/lnm/",
                                 "AccountReference": "12345",
                                 "TransactionDesc": "Testing mpesa app"
                             }
