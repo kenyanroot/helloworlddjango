@@ -8,7 +8,7 @@ from .serializers import LNNOnlineSerializer
 
 
 class LNMCallbackapiview(CreateAPIView):
-    queryset =LMNOnline.objects.all()
+    queryset =LMNOnline
     serializer_class = LNNOnlineSerializer
     permission_classes = [AllowAny]
     def create(self,request,**kwargs):
@@ -39,7 +39,7 @@ class LNMCallbackapiview(CreateAPIView):
 
         transaction_datetime= datetime.strptime(sting_transaction_date, "%Y%m%d%H%M%S")
         print(transaction_datetime)
-        our_model=LMNOnline.objects.create(
+        our_model=LMNOnline(
             Merchant_requestID=merchant_request_ID,
             Checkout_requestID =checkout_request_ID,
             Resultcode =result_code,
