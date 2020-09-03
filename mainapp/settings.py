@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'mainapp.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#DATABASES = {
+DATABASES = {
     #'default': {
        # 'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': BASE_DIR / 'db.sqlite3',
@@ -92,19 +92,19 @@ WSGI_APPLICATION = 'mainapp.wsgi.application'
 #}
 
 #heroku database configs
-DATABASES = {
-    'default': {
-        'ENGINE':'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mpesa ci',
-        'USER': 'postgres',
-        'PASSWORD': '2025',
-        'PORT':'',
-        'HOST':'localhost',
-    }
+#DATABASES = {
+    #'default': {
+        #'ENGINE':'django.db.backends.postgresql_psycopg2',
+        #'NAME': 'mpesa ci',
+        #'USER': 'postgres',
+        #'PASSWORD': '2025',
+        #'PORT':'',
+        #'HOST':'localhost',
+    #}
 }
-#import dj_database_url
+import dj_database_url
 
-#DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 
 # Password validation

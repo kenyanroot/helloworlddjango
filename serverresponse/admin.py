@@ -1,3 +1,6 @@
 from django.contrib import admin
 
 # Register your models here.
+from  serverresponse.models import LMNOnline
+
+admin.site.register(LMNOnline)
