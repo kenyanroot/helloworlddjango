@@ -10,5 +10,5 @@ class  LMNOnline(models.Model):
     Mpesa_receiptnumber=models.CharField(max_length=20)
     Transactiondate =models.DateTimeField()
     Phonenumber =models.CharField(max_length=13)
-    def __str__(self):
-        return f"{self.Phonenumber} has sent  {self.A_mmount} at {self.Transactiondate}"
+    #def __str__(self):
+        #return f"{self.Phonenumber} has sent  {self.A_mmount} at {self.Transactiondate}"
