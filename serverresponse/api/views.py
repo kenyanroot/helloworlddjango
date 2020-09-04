@@ -39,7 +39,7 @@ class LNMCallbackapiview(CreateAPIView):
 
         transaction_datetime= datetime.strptime(sting_transaction_date, "%Y%m%d%H%M%S")
         print(transaction_datetime)
-        our_model=LMNOnline(
+        our_model=LMNOnline.objects.create(
             Merchant_requestID=merchant_request_ID,
             #Checkout_requestID =checkout_request_ID,
             Resultcode =result_code,
