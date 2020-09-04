@@ -41,7 +41,7 @@ class LNMCallbackapiview(CreateAPIView):
         print(transaction_datetime)
         our_model=LMNOnline(
             Merchant_requestID=merchant_request_ID,
-            Checkout_requestID =checkout_request_ID,
+            #Checkout_requestID =checkout_request_ID,
             Resultcode =result_code,
             Resultdesc=result_desc,
             A_mmount  =ammount,
