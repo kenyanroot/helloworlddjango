@@ -5,5 +5,5 @@ from  greetings.models import Namecomment
 admin.site.register(Namecomment)
 
 
-class Namecomment(admin.ModelAdmin):
+class NamecommentAdmin(admin.ModelAdmin):
     list_display = ('name','comment','phone_number')

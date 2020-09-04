@@ -5,5 +5,5 @@ from  serverresponse.models import LMNOnline
 
 admin.site.register(LMNOnline)
 
-class LMNOnline(admin.ModelAdmin):
+class LMNOnlineAdmin(admin.ModelAdmin):
     list_display = ('Phonenumber','A_mmount','Transactiondate','Resultdesc')
