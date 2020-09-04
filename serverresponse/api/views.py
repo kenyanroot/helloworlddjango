@@ -8,10 +8,10 @@ from .serializers import LNNOnlineSerializer
 
 
 class LNMCallbackapiview(CreateAPIView):
-    queryset =LMNOnline
+    queryset =LMNOnline.objects.all()
     serializer_class = LNNOnlineSerializer
     permission_classes = [AllowAny]
-    def create(self,request,**kwargs):
+    def create(self,request):
         print(request.data, "this is request.data")
         merchant_request_ID=request.data['Body']['stkCallback']['MerchantRequestID']
         checkout_request_ID=request.data['Body']['stkCallback']['CheckoutRequestID']
@@ -50,4 +50,5 @@ class LNMCallbackapiview(CreateAPIView):
             Phonenumber  =phone_number,)
         our_model.save()
         return Response({'our result code':"yeey its working!"})
+    
 
