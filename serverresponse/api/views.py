@@ -11,7 +11,9 @@ class LNMCallbackapiview(CreateAPIView):
     queryset =LMNOnline.objects.all()
     serializer_class = LNNOnlineSerializer
     permission_classes = [AllowAny]
-    def create(self,request):
+
+    def create(self, request):
+
         print(request.data, "this is request.data")
         merchant_request_ID=request.data['Body']['stkCallback']['MerchantRequestID']
         checkout_request_ID=request.data['Body']['stkCallback']['CheckoutRequestID']
@@ -49,6 +51,6 @@ class LNMCallbackapiview(CreateAPIView):
             Transactiondate =transaction_datetime,
             Phonenumber  =phone_number,)
         our_model.save()
-        return Response({'our result code':"yeey its working!"})
+        return Response({"our result code":"yeey its working!"})
     
 

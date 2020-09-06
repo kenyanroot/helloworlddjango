@@ -1,6 +1,6 @@
 from django.urls import path
 
-from serverresponse.api.views import LNMCallbackapiview
+from .views import LNMCallbackapiview
 
 urlpatterns = [
     path('lnm/', LNMCallbackapiview.as_view(), name='lnm-callbackurl'),
