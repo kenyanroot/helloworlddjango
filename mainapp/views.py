@@ -35,7 +35,7 @@ def acess_token():
 
 
 def homepage(request):
-    return render(request, 'mpesa/stingo.html')
+    return render(request, 'mpesa/index.html')
 
 
 class Viewclass(View):

@@ -1,0 +1,330 @@
+.body{background-color: #828282;
+}
+
+.rectangle {
+  height: 69px;
+  
+  opacity: 0.33;
+  position: fixed;
+  left: 0cm;
+  top: 0cm;
+  z-index: 5;
+  width: 100%;
+  
+  
+  background-color: #4F4F4F;
+  border-style:solid ;
+  
+}
+
+.photo {
+  height: 751px;
+  width: 1366px;
+  position: absolute;
+  top: 0cm;
+  left: 0cm;
+  z-index: -1;
+
+
+}
+
+.firefly {
+  height: 34px;
+  width: 124px;
+  color: #2AC940;
+  font-family: "Agency FB";
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  position: fixed;
+  left: 76px;
+  z-index: 6;
+}
+
+.about {
+  height: 34px;
+  width: 90px;
+  color: #2AC940;
+  font-family: "Agency FB";
+  font-size: 17px;
+  line-height: 20px;
+  z-index: 2;
+  position: fixed;
+  right: 135px;
+}
+
+.contacts {
+  height: 34px;
+  width: 97px;
+  color: #2AC940;
+  font-family: "Agency FB";
+  font-size: 17px;
+  line-height: 20px;
+  z-index: 2;
+  position: fixed;
+  right: 27px;
+}
+
+.heythere {
+
+  height: 97px;
+  width: 335px;
+ 
+  color: #2AC940;
+  font-family: "Agency FB";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  right: 520px;
+  top: 225px;
+  ;
+}
+
+.welcometo {
+  height: 32px;
+  width: 195px;
+  color: #333;
+  font-family: "Agency FB";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  right: 520px;
+  top: 347px;
+
+}
+
+.rectangle2 {
+  height: 36px;
+  width: 143px;
+  border-radius: 8px 0 0;
+  background-color: #C8C8C8;
+  z-index: 2;
+  position: absolute;
+  right: 543px;
+  top: 365px;
+
+}
+
+.rectangle-1 {
+  height: 36px;
+  width: 102px;
+  border-radius: 0 8px 0 0;
+  background-color: #000;
+  z-index: 3;
+  position: absolute;
+  right: 445px;
+  top: 365px;
+
+}
+
+.firefly_2 {
+  height: 27px;
+  width: 78px;
+  color: #2AC940;
+  font-family: "Agency FB";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  z-index: 4;
+  position: absolute;
+  right: 460px;
+  top: 347px;
+}
+
+.text_rectangle{
+    height: 273px;
+    width: 650px;
+    border-radius: 8px 0 0;
+    background-color: #C8C8C8;
+    z-index: 2;
+    position: absolute;
+    top: 810px;
+    right:120px ;
+    left: 120px;
+    width:1126px;
+  
+}
+
+.demoweb {
+  height: 74px;
+  width: 591px;
+  color: #333;
+  font-family: "Agency FB";
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  top: 860px;
+  right:120px ;
+  left: 120px;
+  width:1126px;
+  text-decoration: underline;
+}
+
+.feelfree{
+    height: 77px;
+    width: 413px;
+    color: #333;
+    font-family: "Agency FB";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    top: 963px;
+    right:200px ;
+    
+    width:900px;
+    
+}
+
+.formrectangle {
+  height: 433px;
+  width: 384px;
+  background-color: #C8C8C8;
+  background-image: image(textrectangle.png);
+  z-index: 3;
+  position: absolute;
+  top: 1200px;
+  right: 200px ;
+  width: 900px;
+  
+
+
+}
+
+
+.input {
+  
+  border: none;
+  border-bottom:2px solid green;
+  display:inline-block;
+  padding:15px ;
+  width:50%;
+  z-index: 4;
+  position: absolute;
+  right: 277px;
+  
+  
+
+
+  
+
+}
+
+.label{
+
+  
+  
+  height: 41px;
+  width: 84px;
+  color: #333;
+  font-family: "Agency FB";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  
+
+}
+
+.label2{
+
+  height: 41px;
+  width: 84px;
+  color: #333;
+  font-family: "Agency FB";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  position: absolute;
+  left: 53px;
+
+  top: 123px;
+
+
+}
+
+.input2{
+  border: none;
+  border-bottom:2px solid green;
+  display:inline-block;
+  padding:15px ;
+  width:50%;
+  z-index: 4;
+  position: absolute;
+  right: 277px;
+  top: 110px;
+
+
+}
+
+.label3{
+
+  height: 41px;
+  width: 84px;
+  color: #333;
+  font-family: "Agency FB";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  position: absolute;
+  top: 210px;
+  left: 53px;
+
+}
+
+
+
+.input3{
+
+  border: none;
+  border-bottom:2px solid green;
+  display:inline-block;
+  padding:15px ;
+  width:50%;
+  z-index: 4;
+  position: absolute;
+  right: 277px;
+  height: 100px;
+  top: 190px; 
+  border: 2px solid green
+
+}
+
+.button{
+  position: absolute;
+  right: 277px;
+  height: 50px;
+  top: 350px; 
+  background-color: #4CAF50;
+  border:none;
+  color: white;
+  padding:15px 32px;
+  text-align:center;
+  text-decoration:none;
+  display:inline-block;
+  font-size:15px;
+  margin:4px 2px;
+  cursor: pointer;
+  position:absolute;
+  left: 137px;
+
+
+
+}
