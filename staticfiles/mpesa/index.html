@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/cssdev.css' %}" />
+
+<body class="body">
+    <h1 class="firefly">FIREFLY</h1>
+    <h2 class="about">ABOUT</h2>
+    <h2 class="contacts">CONTACTS</h2>
+
+    <div class="rectangle"></div>
+    <img src="{% static 'mpesa/Nairobi.jpg' %}" class="photo">
+    <h1 class="heythere">HEY THERE!</h1>
+    <h1 class="welcometo">WELCOME TO</h1>
+    <img class="rectangle2" src="{% static 'mpesa/Rectangle.png' %}">
+    <img class="rectangle-1" src="{% static 'mpesa/Rectangle 1.png' %}">
+    <h1 class="firefly_2" >FIREFLY</h1>
+    <img class="text_rectangle" src="{% static 'mpesa/textrectangle.png' %}">
+    <h2 class="demoweb" >This is a demonstration website for lipa na mpesa intergration</h2>
+    <h3 class="feelfree">Feel free to try in out and provide your feedback in the commments box.If you would like to get mpesa intergration on your site,click on the contacts  tab to reach out to me</h3>
+
+
+    <form class="formrectangle" method="post" action="Viewclass" >{% csrf_token %}
+
+        
+            <label for="phonen" class="label">Phone No</label><br><br>
+            <input class="input" type="text" name="phone" id="phonen" placeholder="Phone number">
+
+
+            <label for="firstname" class="label2">First name</label><br><br>
+            <input class="input2"   name="firstname" type="text" id="firstname" placeholder="Name">
+
+            <label for="commments" class="label3">Comments</label><br><br>
+            <input class="input3"  name="comment" type="text" id="commments" placeholder="Comments">
+
+            <button  class= "button" type="submit">SUBMIT</button>
+
+
+    </form>
+
+
+    <div></div>
+
+    
+    
+</body>
+
+</html>
