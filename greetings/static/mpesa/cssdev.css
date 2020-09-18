@@ -1,6 +1,7 @@
 .body{background-color: #828282;
 }
 
+
 .rectangle {
   height: 69px;
   
@@ -19,7 +20,9 @@
 
 .photo {
   height: 751px;
-  width: 1366px;
+  width: 1366px
+  padding-top : 54%;
+  max-width:100%;
   position: absolute;
   top: 0cm;
   left: 0cm;
@@ -102,6 +105,7 @@
 .rectangle2 {
   height: 36px;
   width: 143px;
+  max-width:100% ;
   border-radius: 8px 0 0;
   background-color: #C8C8C8;
   z-index: 2;
@@ -114,6 +118,7 @@
 .rectangle-1 {
   height: 36px;
   width: 102px;
+  max-width:100%;
   border-radius: 0 8px 0 0;
   background-color: #000;
   z-index: 3;
@@ -126,6 +131,7 @@
 .firefly_2 {
   height: 27px;
   width: 78px;
+  max-width:100% ;
   color: #2AC940;
   font-family: "Agency FB";
   font-size: 28px;
@@ -141,6 +147,7 @@
 .text_rectangle{
     height: 273px;
     width: 650px;
+    max-width:100%;
     border-radius: 8px 0 0;
     background-color: #C8C8C8;
     z-index: 2;
@@ -191,6 +198,7 @@
 .formrectangle {
   height: 433px;
   width: 384px;
+  max-width:100%;
   background-color: #C8C8C8;
   background-image: image(textrectangle.png);
   z-index: 3;

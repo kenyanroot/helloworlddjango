@@ -35,7 +35,7 @@ def acess_token():
 
 
 def homepage(request):
-    return render(request, 'mpesa/index.html')
+    return render(request, 'mpesa/index2.html')
 
 
 class Viewclass(View):
@@ -103,7 +103,7 @@ class Viewclass(View):
                                 "PartyB":business_short_code,
                                 "PhoneNumber": phone_number,
                                 "CallBackURL": "https://firefly-m.herokuapp.com/api/payments/lnm/",
-                                "AccountReference": "12345",
+                                "AccountReference": "Anaco",
                                 "TransactionDesc": "Testing mpesa app"
                             }
 
