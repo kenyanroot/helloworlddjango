@@ -53,18 +53,18 @@ body,html{
   }
 
 
-  }
 
-  .transparentcard:hover{
+.trcontent:hover{
     color: #255784;
     background:#2AC940;
     box-shadow: 0 0 10px #2AC940,0 0 40px #2196f3 ,0 0 80px #2196f3 ;
     transition-delay: 0.2s;
     justify-items: center;
     opacity:1;
-       
+
 
   }
+
 
 
 
@@ -144,6 +144,9 @@ body,html{
     z-index: 3;
 
   }
+
+
+
 
 
   .get-started {
@@ -449,12 +452,12 @@ body,html{
   background: linear-gradient(90deg, transparent, #2AC940);
 }
 
-.footer:hover span:nth-child(1){
+/*.footer:hover span:nth-child(1){
   left: 100%;
   transition: 1s;
 
  
-}
+}*/
 
 
 
