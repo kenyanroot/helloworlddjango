@@ -34,7 +34,7 @@ body,html{
 .transparentcard {
     height: 279px;
     width: 70%;
-    opacity: 0.21;
+   opacity: 0.21;
     background-color: #FFF;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5), 0 2px 4px 0 rgba(0,0,0,0.5);
     position: relative;
@@ -48,6 +48,9 @@ body,html{
     padding-right: 30px;
     text-align: center;
     cursor: pointer;
+
+
+  }
 
 
   }
@@ -102,26 +105,25 @@ body,html{
     line-height: 14px;
     position:absolute;
     position: fixed;
-    right: 27px;
+    right: 35px;
     top: 10px;
   }
 
 
   .offercustomers{
     position: relative;
-    top: -19px;
+    top: 80px;
     opacity: 1;
     color:white;
     font-family: "Agency FB";
     font-size: 18px;
-    font-weight: 700; 
+    font-weight: 700;
     line-height: 22px;
     text-align: center;
     opacity: 1.0;
     z-index: 4;
 
-
-  }
+    }
 
 
   .trcontent{
@@ -130,7 +132,7 @@ body,html{
     position: absolute;
     left: 53px;
     right: 53px;
-    top: 200px;
+    top: 99px;
     z-index: 2;
     justify-content: center;
     align-items: center;
@@ -138,6 +140,8 @@ body,html{
     padding-right: 30px;
     text-align: center;
     cursor: pointer;
+
+    z-index: 3;
 
   }
 
@@ -157,7 +161,8 @@ body,html{
     fill:solid;
     background-color: #2AC940;
     position:relative;
-    top: 20px;
+    left: 15px;
+    top: 130px;
     z-index: 3;
     border: none;
     height: 22px;
@@ -167,12 +172,10 @@ body,html{
     font-weight: 700;
     line-height: 22px;
     text-align: center;
-  
+
 
 
   }
-
-
 
   .get-startedbutton:hover{
 
@@ -475,7 +478,7 @@ padding-right: 40px;
   
 
 }
-.transparentcard{
+.transparentcard, .trcontent{
 
   width: 70%;
   position: absolute;
@@ -503,8 +506,7 @@ padding-right: 40px;
 
 .trcontent{
   padding-left: 0px;
-  padding-right: 30px;
-
+  padding-right: 40px;
 
 }
 
