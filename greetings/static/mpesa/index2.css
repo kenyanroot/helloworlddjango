@@ -2,17 +2,24 @@
 
   background-color: #255784;
   background-repeat: no-repeat;
+  min-width: 100%;
+  margin: 0;
   
 
-
+  /*
+  #background-image: url('Nairobi.jpg');
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  */
 
    
 
 }
 
-/*body,html{
-  height: 100%;
-}*/
+body,html{
+  min-width: 100%;
+}
 
 
 .rectangle{
@@ -30,15 +37,22 @@
 }
 
 .transparentcard {
-    padding-top: 279px;
-    width: 74%;
+    height: 279px;
+    width: 70%;
     opacity: 0.21;
     background-color: #FFF;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5), 0 2px 4px 0 rgba(0,0,0,0.5);
     position: relative;
     left: 53px;
+    right: 53px;
     top: 99px;
     z-index: 2;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    cursor: pointer;
 
 
   }
@@ -50,8 +64,7 @@
     transition-delay: 0.2s;
     justify-items: center;
     opacity:1;
-        2196f3
-        2196f3
+       
 
   }
 
@@ -100,41 +113,56 @@
 
 
   .offercustomers{
-
-    height: 41px;
-    width: 51%;
-    color: #FFF;
+    position: relative;
+    top: -19px;
+    opacity: 1;
+    color:white;
     font-family: "Agency FB";
     font-size: 18px;
     font-weight: 700; 
     line-height: 22px;
     text-align: center;
+    opacity: 1.0;
+    z-index: 4;
+
+
+  }
+
+
+  .trcontent{
+    height: 279px;
+    width: 70%;
     position: absolute;
-    padding-left: 18%;
-    top: 80px;
+    left: 53px;
+    right: 53px;
+    top: 200px;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    cursor: pointer;
+
+  }
+
+
+  .get-started {
+    width: 20%;
     z-index: 3;
 
   }
-  .get-started {
-    height: 18px;
-    width: 20%;
-    
-    position: relative;
-    left: 38px;
-    top: 80px;
-    z-index: 3;
-  }
+
+
 
   .get-startedbutton {
 
-    height: 40px;
     width: 50%;
     border-radius: 8px 0 0;
     fill:solid;
     background-color: #2AC940;
-    position: relative;
-    left: 18px;
-    top: 225px;
+    position:relative;
+    top: 20px;
     z-index: 3;
     border: none;
     height: 22px;
@@ -144,6 +172,7 @@
     font-weight: 700;
     line-height: 22px;
     text-align: center;
+  
 
 
   }
@@ -393,15 +422,14 @@
 .footer{
 
   height: 300px;
-  width: 100%;
   opacity : 0.79;
   text-align: center;
   background-color : #000;
   position: relative;
   top :635px;
   z-index: 1;
-  padding-right: 0px;
-  padding-left: 0px;
+  margin: 0;
+ 
   
 
 }
@@ -433,6 +461,59 @@
 
 
  
+@media screen and (max-width:390px){
+
+.jumpin ,.tormendous {  
+font-size: 0.9em;
+padding-left:40px ;
+padding-right: 40px;
+
+
+
+}
+
+.offercustomers, .get-started{
+
+  font-size: 0.9em;
+  padding-left: 20px ;
+  padding-right: 
+  
+
+}
+.transparentcard{
+
+  width: 70%;
+  position: absolute;
+  left: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+}
+
+.footer{
+
+  position: relative;
+  top :845px;
+
+}
+.about, .tecnologies{
+  font-size: 1em;
+
+}
+.firefly{
+ font-size: 1.5em; 
+ left: 10px;
+}
+
+.trcontent{
+  padding-left: 0px;
+  padding-right: 30px;
+
+
+}
+
+
 }
 
 
