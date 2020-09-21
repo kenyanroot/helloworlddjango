@@ -1,14 +1,5 @@
 
 
-@font-face {
-font-family: 'Agency FB';
-font-style: normal;
-font-weight: normal;
-src: local('Agency FB Bold'), url('AGENCYB.woff') format('woff');
-}
-
-
-
 
 .agency{
         color:red;
