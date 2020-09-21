@@ -1,11 +1,21 @@
-.pa{
+
+
+@font-face {
+font-family: 'Agency FB';
+font-style: normal;
+font-weight: normal;
+src: local('Agency FB Bold'), url('AGENCYB.woff') format('woff');
+}
+
+
+
+
+.agency{
         color:red;
-        font-family: Arial Verdana,sans-seriff;
+        font-family:'Agency FB';
         font-size: small;
-    }
 
-
-
+}
 
 .button{background-color: #4CAF50;
         border:none;
@@ -46,4 +56,7 @@
 }
 
 .paragraph{font-size: small;
+}
+.body{
+background-color:#255784;
 }
