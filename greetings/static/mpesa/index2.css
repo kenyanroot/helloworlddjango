@@ -1,6 +1,6 @@
 
 
- @import url(https://allfont.net/allfont.css?fonts=agency-fb);
+@import url(https://allfont.net/allfont.css?fonts=agency-fb);
 
 .body{
 
@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   min-width: 100%;
   margin: 0;
-   font-family:'Agency FB', arial;
+  font-family:'Agency FB', arial;
   
 
 
@@ -97,7 +97,7 @@ body,html{
     position: fixed;
     left:6%;
     z-index: 6;
-    top:  0;
+    top:  1.5%;
     color: #2AC940;
     font-family:'Agency FB', arial;
   }
