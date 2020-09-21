@@ -2,7 +2,7 @@
 font-family: 'Agency FB';
 font-style: normal;
 font-weight: normal;
-src: local('Agency FB Bold'), url('AGENCYB.woff') format('woff');
+src: local('Agency FB Regular'), url('AGENCYR.TTF') format('TTF');
 }
 
 
@@ -326,8 +326,7 @@ body,html{
 
 
   .jumpin {
-    color: #FFF;
-    -webkit
+    color: #fff;
     font-family: "Agency FB";
     font-weight: 700;
     line-height: 24px;
@@ -341,9 +340,15 @@ body,html{
 
   .jumpindiv:hover{
 
-    transform:scale(1.2);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-    width: 85%;
+    #transform:scale(1.2);
+    #box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    #width: 75%;
+
+    color: #255784;
+    background:#2196f3;
+    box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0.1s;
+    background-color: #060c21;
 
   }
 
