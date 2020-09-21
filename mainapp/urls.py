@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-
-
+from .views import mpesaform
 from .views import homepage, Viewclass
+
 
 
 
@@ -29,5 +29,7 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('Viewclass',Viewclass.as_view()),
     path('api/payments/' ,include("serverresponse.api.urls")),
+    path('getstarted/' ,mpesaform ,name= 'mpesaform'),
+    path('getstarted/Viewclass', Viewclass.as_view()),
 
 ]
