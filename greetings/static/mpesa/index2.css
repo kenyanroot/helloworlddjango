@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   min-width: 100%;
   margin: 0;
-  font-family: "Agency FB";
+  font-family: 'Agency FB', arial;
   font-space: 1px;
   
 
@@ -24,7 +24,7 @@ body,html{
 .rectangle{
 
     color: #2AC940;
-    font-family: "Agency FB";
+    font-family: 'Agency FB', arial;
     background-color:#255784;
     z-index: 4;
     width: 100%;
@@ -98,7 +98,7 @@ body,html{
     z-index: 6;
     top:  2.5%;
     color: #2AC940;
-    font-family: "Agency FB";
+    font-family: 'Agency FB', arial;
   }
 
 
@@ -108,7 +108,7 @@ body,html{
 
         width: 44px;
         color: #2AC940;
-        font-family: "Agency FB";
+        font-family: 'Agency FB', arial;
         font-size: 15px;
         line-height: 14px;
         position: fixed;
@@ -126,7 +126,7 @@ body,html{
     height: 34px;
     width: 59px;
     color: #2AC940;
-    font-family: "Agency FB";
+    font-family: 'Agency FB', arial;
     font-size: 15px;
     line-height: 14px;
     margin-right: 30px;
@@ -143,7 +143,7 @@ body,html{
     top: 80px;
     opacity: 1;
     color:white;
-    font-family: "Agency FB";
+    font-family: 'Agency FB', arial;
     font-size: 18px;
     font-weight: 700;
     line-height: 22px;
@@ -196,7 +196,7 @@ body,html{
     border: none;
     height: 22px;
     color: #000;
-    font-family: "Agency FB";
+    font-family: 'Agency FB', arial;
     font-size: 15px;
     font-weight: 700;
     line-height: 22px;
@@ -298,7 +298,7 @@ body,html{
 
   .tormendous{
     color: white;
-    font-family: "Agency FB";
+    font-family: 'Agency FB', arial;
     line-height: 24px;
     padding-top:25px ;
     font-size: 18px;
@@ -327,7 +327,7 @@ body,html{
 
   .jumpin {
     color: #fff;
-    font-family: "Agency FB";
+    font-family: 'Agency FB', arial;
     font-weight: 700;
     line-height: 24px;
     padding-top:25px ;
@@ -437,7 +437,7 @@ body,html{
   top :160px;
   left: 75px;
   font-size: 1em;
-  font-family: "Agency FB";
+  font-family: 'Agency FB', arial;
   color: #fff;
   z-index: 3;
 
@@ -450,14 +450,14 @@ body,html{
   top :195px;
   left: 75px;
   font-size: 1em;
-  font-family: "Agency FB";
+  font-family: 'Agency FB', arial;
   color: #fff;
 
 }
 
 
 .copyright{
-  font-family: "Agency FB";
+  font-family: 'Agency FB', arial;
   padding-top:100px ;
   font-size:0.7em;
   color: #fff;
