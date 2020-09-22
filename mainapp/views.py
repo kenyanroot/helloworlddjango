@@ -49,6 +49,7 @@ class Viewclass(View):
 
 
         def post(self, request):
+
             phone_number = request.POST['phone']
             comment = request.POST['comment']
             name = request.POST['firstname']
