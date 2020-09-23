@@ -461,18 +461,13 @@ color: #2AC940;
 
 }
 
+
+
+
 }
 
 @media screen and (min-width:750px){
 
-  .body{
-
-#align-items: center;
-
-
-
-
-  }
 
 
   .nocontentsdiv,.containerform{
@@ -484,4 +479,14 @@ color: #2AC940;
 
   }
 
+
 }
+
+
+@media screen and (min-width:250px){
+
+
+}
+
+namel
+phoneno1,
