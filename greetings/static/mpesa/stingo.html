@@ -1,83 +1,100 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/stingo.css' %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8b72583613.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/stingo.css' %}" />
 </head>
-<body class="body">
-    <div class="navb">
-        <div class="rectangle">
-            <h1 class="firefly">FIREFLY</h1>
-            
-                <h2 class="about">ABOUT</h2>
-                <h2 class="tecnologies">TECNOLOGIES</h2>
-            
+
+<body class="body" >
+
+        <div class ="pagecontainer">
+            <div class="contentwrap">
+
+
+                    <div class="navb">
+                        <div class="rectangle">
+                            <h1 class="firefly">FIREFLY</h1>
+
+                                <h2 class="about">ABOUT</h2>
+                                <h2 class="tecnologies">TECNOLOGIES</h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="nocontentsdiv"></div>
+
+                     <div class="containerform">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                            <form action="Viewclass" method="post">{% csrf_token %}
+
+                                    <label id="name1" for="firstname" class="namel label"name="fn" >First Name:</label>
+                                    <input class="firstname" type="text" name="firstname" placeholder="First Name" required>
+
+                                    <label for="phone" class="simu" name="fn" >Phone Number:</label>
+                                    <input class="phoneno1" type="text" name="phone" required placeholder="Phone Number" >
+
+                                    <p class="pa">please enter your phone number in the following format 2547********</p>
+
+
+
+                                    <label for="comment"class="commentl" name="fn" >Comment:</label>
+                                    <input class="comments" type="text" name="comment" placeholder="Write something..." >
+
+
+
+                                <button class="submit" type="submit"><h2 class="submitb" >SUBMIT</h2></button>
+
+
+
+
+                                <p class="hello"><strong>Hello!</strong>, great to see you here.</p>
+
+                                {% if messages %}
+                                {% for message in messages %}
+                                <div class="messages">
+                                    {{ message }}
+                                </div>
+                                {% endfor %}
+                                {% endif %}
+
+
+                            </form>
+
+                     </div>
+
+
+           </div>
+
+
+        
+        <div class="footer">
+
+
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook-square"></i>
+            <h1 class="firefly2">Firefly</h1>
+            <i class="fas fa-mobile"></i>
+            <i class="fas fa-envelope"></i>
+            <h1 class="phoneno">+254 706 278 553</h1>
+
+            <h1 class="email">ndedaanaco@gmail.com</h1>
+            <h1 class="copyright">© 2020 firefly.All Rights Reserved</h1>
+
+
         </div>
 
     </div>
-    <div class="nocontentsdiv"></div>
-
-            <div class="containerform">
-                
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-
-                    <form action="Viewclass" method="post">{% csrf_token %}
-
-                            <label id="name1" for="firstname" class="namel label"name="fn" >First Name:</label>
-                            <input class="firstname" type="text" name="firstname" placeholder="First Name" required>
-                       
-                            <label for="phone" class="simu" name="fn" >Phone Number:</label>
-                            <input class="phoneno1" type="text" name="phone" required placeholder="Phone Number" >
-
-                            <p class="pa">please enter your phone number in the following format 2547********</p>
-                      
-
-                      
-                            <label for="comment"class="commentl" name="fn" >Comment:</label>
-                            <input class="comments" type="text" name="comment" placeholder="Write something..." >
-                       
-
-                       
-                        <button class="submit" type="submit"><h2 class="submitb" >SUBMIT</h2></button>
-
-
-        
-
-                         <p class="hello"><strong>Hello!</strong>, great to see you here.
-
-
-                    </form>
-
-               
-
-             </div>
-
-        </div>
-
-
-
-        
-    <div class="footer">
-       
-
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-facebook-square"></i>
-        <h1 class="firefly2">Firefly</h1>
-        <i class="fas fa-mobile"></i>
-        <i class="fas fa-envelope"></i>
-        <h1 class="phoneno">+254 706 278 553</h1>
-       
-        <h1 class="email">ndedaanaco@gmail.com</h1>
-        <h1 class="copyright">© 2020 firefly.All Rights Reserved</h1>
-        
-   
-    
 
 
 

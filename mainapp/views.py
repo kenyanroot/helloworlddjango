@@ -9,6 +9,8 @@ from django.views import View
 from requests.auth import HTTPBasicAuth
 import re
 
+from django.contrib import messages
+
 
 
 # Create your views here.
@@ -59,15 +61,24 @@ class Viewclass(View):
             print(phone_number, comment, name)
 
             if len(phone_number)!=12:
-                return HttpResponse("Number too short or too long")
+                messages.error(request,"Phone Number too short or too long!")
+                return render(request,"mpesa/stingo.html")
 
             else:
 
                 result = re.match('^[254]+$', phone_number[0:3])
                 print(result)
+
                 if result == None:
-                    return HttpResponse("number did not start with 254")
+                    messages.error(request, "Number did not start with 254")
+
+                    return render(request,"mpesa/stingo.html")
+
+
+
                 else:
+
+
                     if phone_number.isnumeric() == True:
 
                         print("got it!")
@@ -119,9 +130,15 @@ class Viewclass(View):
 
                         user = Namecomment(name=name, comment=comment, phone_number=phone_number, )
                         user.save()
-                        return HttpResponse("sucessfull")
+
+                        messages.success(request, "Sucessful. Please check your phone")
+
+                        return render(request,"mpesa/stingo.html")
                     else:
-                        return HttpResponse("number is not numeric")
+
+                        messages.error(request, "Phone Number is not numeric")
+
+                        return render(request,"mpesa/stingo.html")
 
 
 

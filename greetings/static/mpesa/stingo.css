@@ -5,15 +5,16 @@
     #color: white;
     font-family: "Agency FB";
     
-    
-    
-   
+
 }
+
+
 .rectangle{
     
     color: #2AC940;
     font-family: "Agency FB";
-    background-color: #255784;
+    background-color:#000;
+    opacity: 0.79;
     z-index: 4;
     width: 100%;
     height: 60px;
@@ -22,10 +23,30 @@
     align-content: center;
     
 }
+
+
+
 .content{
 position:absolute;
 top: 400px;
 }
+
+
+.pagecontainer{
+
+position: relative;
+min-height: 100vh;
+
+
+}
+
+.contentwrap{
+
+  padding-bottom:300px;
+
+
+}
+
 
 .firefly{
     height: 34px;
@@ -79,24 +100,24 @@ top: 400px;
       background-color: white;
       position: absolute;
       width: 90%;
-      height: 50vh;
+      height: 400px;
       top: 150px;
       left:5%;
       z-index: 2;
       border-radius: 8px 8px 8px 8px;
       box-shadow:0 2px 4px 0 rgba(0,0,0,0.5), 0 2px 4px 0 rgba(0,0,0,0.5);
       #background-color: #255784;
-     
 
 
 
+      #background:url(CUTEWHITE.jpg);
     #background-position: center;
     #background-repeat:no-repeat;
     3background-size: cover;
     #height: 50%;
-      
 
-      
+
+
   }
 
   .nocontentsdiv{
@@ -104,7 +125,7 @@ top: 400px;
     #background-color: white;
     position: absolute;
     width: 90%;
-    height: 50vh;
+    height: 400px;
     top: 150px;
     left:5%;
     z-index: 1;
@@ -112,11 +133,9 @@ top: 400px;
     box-shadow:0 2px 4px 0 rgba(0,0,0,0.5), 0 2px 4px 0 rgba(0,0,0,0.5);
     border-radius: 8px 8px 8px 8px;
     align-items: center;
-    
-    
-  }
 
-  
+
+  }
 
   
  
@@ -366,17 +385,17 @@ color: #2AC940;
   
   
 .footer{
-  width: 100%;
-  height: 300px;
-  opacity : 0.79;
+
+ opacity : 0.79;
   text-align: center;
   background-color : #000;
-  position: relative;
-  top :600px;
-  z-index: 3;
+  position: absolute;
+  bottom :0;
+  width: 100%;
+  z-index: 1;
   margin: 0;
- 
-  
+  height: 300px;
+
 
 }
 
@@ -437,17 +456,35 @@ color: #2AC940;
 }*/
 @media screen and (min-width:400px){
 
-    .body{
-   
-   
+  .nocontentsdiv,.containerform{
+    width: 80%;
+    left:10%;
+    height: 400px;
 
-    }
+
+}
+
+}
+
+@media screen and (min-width:750px){
+
+  .body{
+
+#align-items: center;
 
 
-    .nocontentsdiv,.containerform{
-        width: 30%;
-        left:35%;
-        height: 55vh;
-    }
-   
+
+
+  }
+
+
+  .nocontentsdiv,.containerform{
+      max-width: 50%;
+      left: 25%;
+
+      height: 400px;
+
+
+  }
+
 }
