@@ -464,6 +464,8 @@ color: #2AC940;
 
 
 
+
+
 }
 
 @media screen and (min-width:750px){
@@ -483,10 +485,18 @@ color: #2AC940;
 }
 
 
-@media screen and (min-width:250px){
+@media screen and (max-width:400px){
+
+.hello{
+    position: absolute;
+    top:5px;
+    left: 20%;
+    size: 5px;
+
+
+
+    }
 
 
 }
 
-namel
-phoneno1,
