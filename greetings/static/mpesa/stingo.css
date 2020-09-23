@@ -502,3 +502,9 @@ color: #2AC940;
 
 }
 
+.messages{
+color:red;
+position:absolute;
+top:50px;
+left:40%
+}
