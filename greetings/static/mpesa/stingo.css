@@ -276,10 +276,11 @@ outline:none;
 
 
   .hello{
-    position: absolute;
+
+    position:relative;
     top:5px;
-    left: 35%;
     size: 5px;
+
 
 
     }
@@ -496,14 +497,18 @@ outline:none;
 @media screen and (max-width:400px){
 
 .hello{
-    position: absolute;
-    top:5px;
 
     size: 5px;
 
-
-
     }
+
+ .namel,.simu,.commentl,.hello{
+
+ font-size:.9em;
+
+
+
+ }
 
 
 
@@ -514,7 +519,7 @@ outline:none;
 color:red;
 font-size:.7em;
 position:relative;
-top:50px;
+top:10px;
 
 
 }
