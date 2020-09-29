@@ -42,6 +42,12 @@ def homepage(request):
 def mpesaform(request):
     return render(request,'mpesa/stingo.html')
 
+def tecnologies(request):
+    return render(request ,'mpesa/tecnologies.html')
+def about(request):
+    return render(request, 'mpesa/about.html')
+
+
 
 class Viewclass(View):
 

@@ -59,7 +59,7 @@ min-height: 100vh;
     position: fixed;
     left:6%;
     z-index: 6;
-    top:  0;
+    top: 2.5%;
   }
 
 
@@ -73,10 +73,10 @@ min-height: 100vh;
         font-size: 15px;
         line-height: 14px;
         position: fixed;
-        right: 70px;
+        right: 130px;
         margin-right: 50px;
         margin-left: 40px;
-        top: 1.5%;
+        top: 3%;
         
        
       
@@ -93,7 +93,7 @@ min-height: 100vh;
     margin-right: 20px;
     position: fixed;
     right: 20px;
-    top: 1.5%;
+    top: 3%;
     
     
   }

@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from .views import mpesaform
+from .views import mpesaform, about, tecnologies
 from .views import homepage, Viewclass
+
 
 
 
@@ -31,5 +32,7 @@ urlpatterns = [
     path('api/payments/' ,include("serverresponse.api.urls")),
     path('getstarted/' ,mpesaform ,name= 'mpesaform'),
     path('getstarted/Viewclass', Viewclass.as_view()),
+    path('about',about, name= "about"),
+    path('tecnologies',tecnologies, name="tecnologies"),
 
 ]
