@@ -3,7 +3,7 @@
 
 min-height: 50vh;
 width: 100%;
-background-image:url(images/cheetah.jpg);
+background-image:url(park.jpg);
 background-size: contain;
 background-position: center;
 #background-repeat: no-repeat;
@@ -26,7 +26,7 @@ padding-left: 0px;
 font-weight: bold;
 
 padding-top: 30vh;
-#background-color: lawngreen;
+
 text-align: center;
 z-index: 3;
 
