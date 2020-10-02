@@ -37,7 +37,7 @@ def acess_token():
 
 
 def homepage(request):
-    return render(request, 'mpesa/index2.html')
+    return render(request, 'mpesa/index.html')
 
 def mpesaform(request):
     return render(request,'mpesa/stingo.html')

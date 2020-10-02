@@ -146,7 +146,8 @@ STATIC_URL = '/static/'
 
 STATIC_DIRS=(
     os.path.join(BASE_DIR,'mainapp/static'),
-    os.path.join(BASE_DIR, 'static/template')
+    os.path.join(BASE_DIR, 'static/template'),
+    os.path.join(BASE_DIR, 'static/mpesa/images')
 )
 
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')

@@ -300,7 +300,7 @@ margin: 40px;
 
 .django{
 
-    background-image: url(Daco_4430861.png);
+    background-image: url(images/Daco_4430861.png);
     background-size: cover;
     background-position: center;
     background-size: cover;
@@ -316,7 +316,7 @@ margin: 40px;
 
 .heroku{
 
-    background-image: url(heroku.png);
+    background-image: url(images/heroku.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -328,7 +328,7 @@ margin: 40px;
 
 .postgres{
 
-    background-image: url(kisspng-logo-postgresql-global-development-group-font-data-lock-auth0-5b62b0f155ff73.6508295815331944813523.png);
+    background-image: url(images/kisspng-logo-postgresql-global-development-group-font-data-lock-auth0-5b62b0f155ff73.6508295815331944813523.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -338,7 +338,7 @@ margin: 40px;
 
 
 .python{
-    background-image: url(python.svg);
+    background-image: url(images/python.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -349,7 +349,7 @@ margin: 40px;
 
 
 .kivy{
-    background-image:url(kisspng-kivy-python-cross-platform-android-5affdc464129f1.5124918015267175102669.png);
+    background-image:url(images/kisspng-kivy-python-cross-platform-android-5affdc464129f1.5124918015267175102669.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -361,7 +361,7 @@ margin: 40px;
 
 .kivymd{
 
-    background-image: url(kivymd.png);
+    background-image: url(images/kivymd.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -371,7 +371,7 @@ margin: 40px;
 
 
 .djangorest{
-    background-image: url(djang-rest-framework-logo.webp);
+    background-image: url(images/djang-rest-framework-logo.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -382,7 +382,7 @@ margin: 40px;
 
 .Api{
 
-    background-image: url(api.png);
+    background-image: url(images/api.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -392,7 +392,7 @@ margin: 40px;
 
 
 .Html5{
-    background-image: url(html-5.png);
+    background-image: url(images/html-5.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -402,7 +402,7 @@ margin: 40px;
 
 
 .css3{
-    background-image: url(css.png);
+    background-image: url(images/css.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -412,7 +412,7 @@ margin: 40px;
 
 .amazon{
 
-    background-image: url(Amazon-Web-Services-AWS-Logo-Transparent-PNG.png);
+    background-image: url(images/Amazon-Web-Services-AWS-Logo-Transparent-PNG.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

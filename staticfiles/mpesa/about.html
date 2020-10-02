@@ -1,0 +1,33 @@
+{%  extends 'mpesa/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome.all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/abou.css' %}" />
+    <script src="https://kit.fontawesome.com/8b72583613.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        {% block content %}
+            <div class="aboutimage">
+                <div class="aboutext">
+                    This is a demo website for lipa na mpesa online intergration.<br>
+                    feel free to try it out and leave your comments.<br>
+                    All funds recieved during testing will be reimbursed within a month.<br>
+                </div>
+                <div class="filter"></div>
+
+                
+            </div>
+        {% endblock %}
+
+
+</body>
+</html>
+
+           
+

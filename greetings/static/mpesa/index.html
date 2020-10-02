@@ -1,52 +1,83 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html> 
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/cssdev.css' %}" />
+    <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome.all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/base.css' %}" />
+    <script src="https://kit.fontawesome.com/8b72583613.js" crossorigin="anonymous"></script>
+    <script src="{% static 'mpesa/try.js' %}" defer></script>
+</head>
+<body>
 
-<body class="body">
-    <h1 class="firefly">FIREFLY</h1>
-    <h2 class="about">ABOUT</h2>
-    <h2 class="contacts">CONTACTS</h2>
-
-    <div class="rectangle"></div>
-    <img src="{% static 'mpesa/Nairobi.jpg' %}" class="photo">
-    <h1 class="heythere">HEY THERE!</h1>
-    <h1 class="welcometo">WELCOME TO</h1>
-    <img class="rectangle2" src="{% static 'mpesa/Rectangle.png' %}">
-    <img class="rectangle-1" src="{% static 'mpesa/Rectangle 1.png' %}">
-    <h1 class="firefly_2" >FIREFLY</h1>
-    <img class="text_rectangle" src="{% static 'mpesa/textrectangle.png' %}">
-    <h2 class="demoweb" >This is a demonstration website for lipa na mpesa intergration</h2>
-    <h3 class="feelfree">Feel free to try in out and provide your feedback in the commments box.If you would like to get mpesa intergration on your site,click on the contacts  tab to reach out to me</h3>
-
-
-    <form class="formrectangle" method="post" action="Viewclass" >{% csrf_token %}
-
+    <nav id="NAVbar" class="navbar">
+        <div class="firefly" onclick="location.href='{% url 'home' %}'">Firefly</div>
         
-            <label for="phonen" class="label">Phone No</label><br><br>
-            <input class="input" type="text" name="phone" id="phonen" placeholder="Phone number">
+        <div class="links">
+            <ul>
+                <li><a class="a" onclick="location.href='{% url 'about' %}'">About</a></li>
+                <li><a class="a"  onclick="location.href='{% url 'tecnologies' %}'">Tecnologies</a></li>
+            </ul>
+        </div>
+        <a href="#" class="togglebutton">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
 
 
-            <label for="firstname" class="label2">First name</label><br><br>
-            <input class="input2"   name="firstname" type="text" id="firstname" placeholder="Name">
-
-            <label for="commments" class="label3">Comments</label><br><br>
-            <input class="input3"  name="comment" type="text" id="commments" placeholder="Comments">
-
-            <button  class= "button" type="submit">SUBMIT</button>
-
-
-    </form>
-
-
-    <div></div>
+        </a>
+    </nav>
 
     
+    <div class="cardhouse">
+    <div class="card firstcard">
+        <p class="offercustomers">Offer your customers convenience by intergrating your website with  mpesa</p>
+        <button id="get" class="get-startedbutton":hover >GET STARTED</button>
+    </div>
+
+    <div class="card secondcard"> 
+        
+        <div class="secondimage"></div>
+        <p class="ease" >Ease of payment is a big factor in determining if customers are willing to buy your products or services.
+        It is also an essensial part of the user experience that can not simply be ignored.</p>
+        
+  </div>
+ 
+    <div class="card thirdcard">
+
+        <div class="image2"></div>
+
+       <div class="text"> <p class="jumpin">Join the wave, Take advantage of one of the worlds most powerful payment systems</p></div>
+
+       
+    </div>
+    </div>
     
+    <div class="footer">
+
+        <span class="greenspan"></span>
+        <span class="greenspan"></span>
+        <span class="greenspan"></span>
+        <span class="greenspan"></span>
+
+        <a  href="https://twitter.com/ndeda_anaclate" class="fab fa-twitter-square"></a>
+        <a href="https://www.instagram.com/anacorayz/" class="fab fa-instagram"></a>
+        <a href="https://www.facebook.com/anaclate.umudii" class="fab fa-facebook-square"></a>
+        <h1 class="firefly2">Firefly</h1>
+        <i class="fas fa-mobile"></i>
+        <i class="fas fa-envelope"></i>
+        <a href="tel:+254-706-278-553" class="phoneno">+254 706 278 553</a>
+
+        <a href="mailto: ndedaanaco@gmail.com" class="email">ndedaanaco@gmail.com</a>
+        <h1 class="copyright">© 2020 firefly.All Rights Reserved</h1>
+
+
+    </div>
+
+
+
 </body>
-
 </html>

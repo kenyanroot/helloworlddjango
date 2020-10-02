@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome.all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/base.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/about.css' %}" />
+    <script src="https://kit.fontawesome.com/8b72583613.js" crossorigin="anonymous"></script>
+    <script src="{% static 'mpesa/try.js' %}" defer></script>
+</head>
+<body>
+
+    <nav id="NAVbar" class="navbar">
+        <div class="firefly" onclick="location.href='{% url 'home' %}'">Firefly</div>
+
+        <div class="links">
+            <ul>
+                <li><a class="a" onclick="location.href='{% url 'about' %}'">About</a></li>
+                <li><a class="a"  onclick="location.href='{% url 'tecnologies' %}'">Tecnologies</a></li>
+            </ul>
+        </div>
+        <a href="#" class="togglebutton">
+
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+
+        </a>
+    </nav>
+
+    {%  block content %}
+
+
+
+    {% endblock %}
+
+
+
+
+
+<div class="footer">
+
+        <span class="greenspan"></span>
+        <span class="greenspan"></span>
+        <span class="greenspan"></span>
+        <span class="greenspan"></span>
+
+        <a  href="https://twitter.com/ndeda_anaclate" class="fab fa-twitter-square"></a>
+        <a href="https://www.instagram.com/anacorayz/" class="fab fa-instagram"></a>
+        <a href="https://www.facebook.com/anaclate.umudii" class="fab fa-facebook-square"></a>
+        <h1 class="firefly2">Firefly</h1>
+        <i class="fas fa-mobile"></i>
+        <i class="fas fa-envelope"></i>
+        <a href="tel:+254-706-278-553" class="phoneno">+254 706 278 553</a>
+
+        <a href="mailto: ndedaanaco@gmail.com" class="email">ndedaanaco@gmail.com</a>
+        <h1 class="copyright">© 2020 firefly.All Rights Reserved</h1>
+
+
+    </div>
+
+
+
+</body>
+</html>

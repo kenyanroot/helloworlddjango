@@ -1,3 +1,4 @@
+{%  extends 'mpesa/base.html' %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -5,24 +6,13 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome.all.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/about.css' %}" />
     <script src="https://kit.fontawesome.com/8b72583613.js" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/about.css' %}".css" />
 </head>
-
-<body class="body" >
-    
-
-                    <div class="navb">
-                        <div class="rectangle">
-                            <a href="#" class="firefly" onclick="location.href='{% url 'home' %}'">FIREFLY</a>
-                             <a class="about" onclick="location.href='{% url 'about' %}'">ABOUT</a>
-                             <a class="tecnologies" onclick="location.href='{% url 'tecnologies' %}'">TECNOLOGIES</a>
-
-                        </div>
-
-                    </div>
-
+<body>
+        {% block content %}
             <div class="aboutimage">
                 <div class="aboutext">
                     This is a demo website for lipa na mpesa online intergration.<br>
@@ -33,34 +23,11 @@
 
                 
             </div>
+        {% endblock %}
+
+
+</body>
+</html>
 
            
 
-            <div class="footer">
-            
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-square"></i>
-                <h1 class="firefly2">Firefly</h1>
-                <i class="fas fa-mobile"></i>
-                <i class="fas fa-envelope"></i>
-                <h1 class="phoneno">+254 706 278 553</h1>
-            
-                <h1 class="email">ndedaanaco@gmail.com</h1>
-                <h1 class="copyright">© 2020 firefly.All Rights Reserved</h1>
-                
-        
-            </div>
-
-
-    
-</div>   
-    
-</body>
-
-</html>

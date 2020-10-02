@@ -1,0 +1,178 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+
+
+
+.bodycontent{
+    
+    width: 100%;
+    height: 400px;
+    padding-bottom:100px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    position: relative;
+    top: 100px;
+    
+} 
+
+.cardt {
+
+
+width: 200px;
+height: 100px;
+
+margin: 40px;
+#background-color:red;
+
+}
+
+.trydiv{
+
+height: 500px;
+background-color:pink;
+width:100%;
+position:absolute;
+top:100px;
+
+}
+
+
+  
+
+
+
+
+
+
+.django{
+
+    background-image: url(images/Daco_4430861.png);
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+    
+
+
+}
+
+
+.heroku{
+
+    background-image: url(images/heroku.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+
+}
+
+
+.postgres{
+
+    background-image: url(images/kisspng-logo-postgresql-global-development-group-font-data-lock-auth0-5b62b0f155ff73.6508295815331944813523.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+}
+
+
+.python{
+    background-image: url(images/python.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+
+}
+
+
+.kivy{
+    background-image:url(images/kisspng-kivy-python-cross-platform-android-5affdc464129f1.5124918015267175102669.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+
+}
+
+
+.kivymd{
+
+    background-image: url(images/kivymd.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+}
+
+
+.djangorest{
+    background-image: url(images/djang-rest-framework-logo.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+}
+
+
+.Api{
+
+    background-image: url(images/api.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+}
+
+
+.Html5{
+    background-image: url(images/html-5.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+}
+
+
+.css3{
+    background-image: url(images/css.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+}
+
+.amazon{
+
+    background-image: url(images/Amazon-Web-Services-AWS-Logo-Transparent-PNG.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor:pointer;
+
+}
