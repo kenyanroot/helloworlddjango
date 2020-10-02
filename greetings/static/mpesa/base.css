@@ -1,8 +1,8 @@
 @font-face {
 
 font-family: 'Agency';
-src:url('mpesa/AGENCYB.TTF')format('TTF'),
-    url('mpesa/AGENCYB.woff')format('woff');
+src:url('AGENCYB.TTF')format('TTF'),
+    url('AGENCYB.woff')format('woff');
 
 }
 
@@ -351,17 +351,6 @@ html{
 
 
 
-.social {
-width:100%;
-height:90px;
-background-color:red;
-display:flex;
-flex-direction:row;
-align-items:center;
-justify-items:space-between;
-
-
-}
 
 .fa-twitter-square{
  
