@@ -1,0 +1,73 @@
+{% extends 'mpesa/base.html' %}
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8b72583613.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'mpesa/form.css' %}" />
+</head>
+
+<body class="body">
+
+
+        {% block content %}
+
+
+         <div class="containerform">
+
+                <form action="Viewclass" method="post">{% csrf_token %}
+                     {% if messages %}
+                    {% for message in messages %}
+                    <div class="messages">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                        <div class="inputbox">
+
+                        <input class="firstname" type="text" name="firstname"  required>
+                            <span >First Name</span>
+
+                        </div>
+
+                        <div class="inputbox">
+
+                        <input class="phoneno1" type="text" name="phone" required >
+                            <span >Phone Number</span>
+
+                        </div>
+
+                        <p class="pa">Please enter your phone number in the following format : 2547********</p>
+
+                       <div class="inputbox">
+
+                        <input class="comments" type="text" name="comment">
+
+                            <span >Comments</span>
+
+                        </div>
+
+
+                    <button class="submit" type="submit"><h2 class="submitb" >SUBMIT</h2></button>
+
+
+
+
+
+
+
+
+
+                </form>
+
+         </div>
+
+
+        {% endblock %}
+    </body>
+
+    </html>

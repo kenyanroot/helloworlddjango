@@ -40,7 +40,7 @@ def homepage(request):
     return render(request, 'mpesa/index.html')
 
 def mpesaform(request):
-    return render(request,'mpesa/stingo.html')
+    return render(request,'mpesa/form.html')
 
 def tecnologies(request):
     return render(request ,'mpesa/tecnologies.html')
@@ -68,7 +68,7 @@ class Viewclass(View):
 
             if len(phone_number)!=12:
                 messages.error(request,"Phone Number too short or too long!")
-                return render(request,"mpesa/stingo.html")
+                return render(request,"mpesa/form.html")
 
             else:
 
@@ -78,7 +78,7 @@ class Viewclass(View):
                 if result == None:
                     messages.error(request, "Number did not start with 254")
 
-                    return render(request,"mpesa/stingo.html")
+                    return render(request,"mpesa/form.html")
 
 
 
@@ -139,12 +139,12 @@ class Viewclass(View):
 
                         messages.success(request, "Sucessful. Please check your phone")
 
-                        return render(request,"mpesa/stingo.html")
+                        return render(request,"mpesa/form.html")
                     else:
 
                         messages.error(request, "Phone Number is not numeric")
 
-                        return render(request,"mpesa/stingo.html")
+                        return render(request,"mpesa/form.html")
 
 
 
