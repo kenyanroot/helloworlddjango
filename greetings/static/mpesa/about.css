@@ -1,13 +1,22 @@
+@font-face {
+
+font-family: 'Agency1';
+src:url('AGENCYB.TTF')format('TTF'),
+    url('AGENCYB.woff')format('woff');
+
+}
+
 
 .aboutimage {
 
-min-height: 50vh;
+min-height: 70vh;
 width: 100%;
-background-image:url(park.jpg);
+#background-image:url(park.jpg);
 background-size: contain;
 background-position: center;
 background-repeat: no-repeat;
 align-items:center;
+font-family: 'Agency1';
 
 
 }
@@ -20,8 +29,8 @@ top:-20% ;
 min-height: 80vh;
 width: 45%;
 color: white;
-font-size: 1.5em;
-font-family: "Agency FB";
+font-size: 1.2em;
+
 padding-left: 0px;
 font-weight: bold;
 
