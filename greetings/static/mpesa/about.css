@@ -1,13 +1,12 @@
 
-.aboutimage{
-
+.aboutimage {
 
 min-height: 50vh;
 width: 100%;
 background-image:url(park.jpg);
 background-size: contain;
 background-position: center;
-#background-repeat: no-repeat;
+background-repeat: no-repeat;
 align-items:center;
 
 
@@ -35,7 +34,7 @@ z-index: 3;
 
 }
 
-.filter{
+.filter11{
 
 position: absolute;
 
@@ -46,7 +45,7 @@ background-color:black;
 background-size: contain;
 background-position: center;
 background-repeat: no-repeat;
-opacity: .4;
+opacity: 0;
 filter:blur(4px);
 z-index: 2;
 
