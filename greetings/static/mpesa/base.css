@@ -248,7 +248,7 @@ html{
 }
 
 .jumpin,.ease{
-  font-size: 1.5em;
+  font-size: 1.3em;
 
 }
 
@@ -266,6 +266,7 @@ html{
   text-align: center;
   padding-left: 10px;
   padding-right: 15px;
+  padding-top:20px;
 }
 
 .get-startedbutton {
@@ -367,7 +368,7 @@ padding: 10px;
 
 
 
-.footer .greenspan{
+.footer span{
 
 display: block;
 position: absolute;
@@ -376,17 +377,17 @@ position: absolute;
 
 
 
-.footer .greenspan:nth-child(1){
+.footer span:nth-child(1){
 top: 0;
 left: -100%;
 width: 100%;
-height: 4px;
+height: 400px;
 background: linear-gradient(90deg, transparent, #2AC940);
 }
 
 
 
-.footer:hover .greenspan:nth-child(1){
+.footer:hover span:nth-child(1){
 left: 0%;
 transition: 1s;
 
@@ -400,18 +401,17 @@ transition: 1s;
   width: 2%;
   color:blue;
 
-  align-self: center;
+  align-self: end;
 
 
 }
 
 
-.fa-instagram{
-
-
+.instagram{
   color:pink;
 
-  align-self: end;
+  align-self:center;
+  cursor:pointer;
 
 
 }
@@ -553,6 +553,8 @@ top: -30PX;
     top:50px;
   }
 
+
+
 }
 
 
@@ -566,12 +568,6 @@ top: -30PX;
 
 
 }
-
-
-
-
-
-
 
 
 
